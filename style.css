@@ -1,0 +1,192 @@
+/* ========================================================
+   General Styles & Direction
+======================================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f4; /* Light Mint Background */
+    direction: ltr; /* English Direction */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+/* ========================================================
+   Container Design
+======================================================== */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================================
+   Header & Profile Image
+======================================================== */
+
+header {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #98ff98;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    margin-bottom: 15px;
+}
+
+/* Bonus: Image turns circular on hover */
+
+.profile-img:hover {
+    border-radius: 50%;
+    transform: scale(1.05);
+}
+
+/* Subtitle */
+
+.subtitle {
+    font-weight: bold;
+    color: #2e8b57;
+    font-size: 1.2rem;
+}
+
+/* ========================================================
+   Headings & Paragraphs
+======================================================== */
+
+h1 {
+    color: #222;
+}
+
+h2 {
+    color: #2e8b57;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* ========================================================
+   Table Styles
+======================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #98ff98;
+    color: #333;
+}
+
+/* Zebra Stripes */
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ========================================================
+   Ordered List
+======================================================== */
+
+ol {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+/* ========================================================
+   Buttons & Hover Effects
+======================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #98ff98;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2e8b57;
+    color: #fff;
+}
+
+/* ========================================================
+   Horizontal Line
+======================================================== */
+
+hr {
+    margin: 30px 0;
+    border: 1px solid #ddd;
+}
+
+/* ========================================================
+   Bonus: Dark Mode
+======================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+
+    .container {
+        background-color: #2d2d2d;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    h1,
+    h2 {
+        color: #98ff98;
+    }
+
+    th {
+        background-color: #2e8b57;
+        color: white;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #383838;
+    }
+
+    td {
+        border-color: #444;
+    }
+
+    .btn {
+        background-color: #2e8b57;
+        color: white;
+    }
+
+    .btn:hover {
+        background-color: #98ff98;
+        color: #222;
+    }
+}
